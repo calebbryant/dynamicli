@@ -54,13 +54,12 @@ class DynamiCLI:
                 if self._get_name(method) == method_name:
                     method = method
                     break
-        elif method_name in globals():
-            method = eval(cmd_name)
         elif hasattr(self.obj, method_name):
             method = getattr(self.obj, method_name)
+        elif method_name in globals():
+            method = eval(cmd_name)
         else:
-            """ Not sure what exception to use, so TypeError it is
-            """
+            # Not sure what exception to use, so TypeError it is
             raise TypeError("Unable to locate function {}".format(method_name))
 
         res = method(**args)
