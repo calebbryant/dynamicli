@@ -23,4 +23,7 @@ usage: demo.py example_method [-h] [--arg1 ARG1]
 
 optional arguments:
   -h, --help   show this help message and exit
-  --arg1 ARG1  Type: str (Default: ExampleDefault)```
+  --arg1 ARG1  Type: str (Default: ExampleDefault)
+
+# python3 demo.py example_method --arg1 "This is a demo"
+This is a demo```
