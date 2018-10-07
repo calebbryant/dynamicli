@@ -55,7 +55,7 @@ class DynamiCLI:
                     method = method
                     break
         elif method_name in globals():
-            method = globals()[cmd_name]
+            method = eval(cmd_name)
         elif hasattr(self.obj, method_name):
             method = getattr(self.obj, method_name)
         else:
