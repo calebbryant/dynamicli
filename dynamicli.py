@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 class DynamiCLI:
     """ DynamiCLI v0.1
     Author: Caleb Bryant
-    Dynamically generates commandlines for classes and functions
+    Dynamically generates commandline interfaces for classes and functions
     - Variable types and defaults in argument help output
     - Documentation for each function as provided in the initial docstring like so
     - Can accept functions, classes, or a list of functions

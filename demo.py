@@ -1,5 +1,7 @@
 from dynamicli import DynamiCLI
 
+""" A couple examples to demonstrate use
+"""
 
 def say_hello(name: str = "World"):
     """ This is the docstring to the 'say_hello' function
@@ -25,3 +27,5 @@ class ExampleClass:
 
 if __name__ == '__main__':
     DynamiCLI(ExampleClass)
+    # Or, for the other one...
+    # DynamiCLI(say_hello)
